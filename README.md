@@ -81,7 +81,7 @@ MVC provides several advantages:
 
 The basic flow of this Laravel website can be represented as:
 
-```text
+
         Browser
            │
            ▼
@@ -95,7 +95,7 @@ The basic flow of this Laravel website can be represented as:
            │
            ▼
    Response to Browser
-```
+
 
 For example, when a visitor opens the Home page, the browser sends a request to Laravel. The route identifies the appropriate controller method, the controller returns the required Blade view, and Laravel sends the generated HTML back to the browser.
 
@@ -109,9 +109,9 @@ Routing is the process of determining what should happen when a user visits a sp
 
 Laravel web routes are commonly stored in:
 
-```text
+
 routes/web.php
-```
+
 
 ## Named Routes
 
@@ -119,17 +119,17 @@ Named routes allow routes to be given a specific name. Instead of repeatedly wri
 
 Example:
 
-```php
+
 Route::get('/', [CompanyController::class, 'home'])->name('home');
-```
+
 
 The route is given the name `home`.
 
 It can then be referenced using:
 
-```php
+
 route('home')
-```
+
 
 Named routes make navigation easier to manage because URLs do not need to be hard-coded throughout the application.
 
@@ -139,15 +139,15 @@ The `GET` method is commonly used when retrieving or displaying a webpage.
 
 Example:
 
-```php
+
 Route::get('/about', [CompanyController::class, 'about']);
-```
+
 
 When a user visits:
 
-```text
+
 /about
-```
+
 
 Laravel sends the request to the `about()` method of the `CompanyController`.
 
@@ -157,7 +157,7 @@ The project's routes are defined in `routes/web.php`.
 
 Example:
 
-```php
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CompanyController;
 
@@ -168,11 +168,12 @@ Route::get('/about', [CompanyController::class, 'about'])->name('about');
 Route::get('/services', [CompanyController::class, 'services'])->name('services');
 
 Route::get('/contact', [CompanyController::class, 'contact'])->name('contact');
-```
+
 
 ### Screenshot: `web.php`
 
-> **Insert your screenshot here.**
+<img width="1920" height="1032" alt="ddbe0dc5-37e9-49bb-9417-28326d81a9d8" src="https://github.com/user-attachments/assets/46034cd1-3522-4ad0-9b09-31ddf7337a0e" />
+
 
 
 # 6. Controllers
@@ -185,9 +186,9 @@ In this project, the `CompanyController` handles the different company profile p
 
 The controller is located at:
 
-```text
+
 app/Http/Controllers/CompanyController.php
-```
+
 
 ## Benefits of Controllers
 
@@ -205,7 +206,7 @@ The `CompanyController` contains methods responsible for displaying each page.
 
 Example:
 
-```php
+
 <?php
 
 namespace App\Http\Controllers;
@@ -232,25 +233,25 @@ class CompanyController extends Controller
         return view('contact');
     }
 }
-```
+
 
 Each method returns a Blade view that is displayed in the browser.
 
 For example:
 
-```php
+
 return view('about');
-```
+
 
 tells Laravel to load:
 
-```text
+
 resources/views/about.blade.php
-```
+
 
 ### Screenshot: `CompanyController.php`
 
-> **Insert your screenshot here.**
+<img width="1920" height="1032" alt="bd4e1b5e-696f-4510-aee4-c98125c74d62" src="https://github.com/user-attachments/assets/a49bfc5f-c667-4e38-a493-62b1b60b09de" />
 
 # 7. Blade Templating Engine
 
@@ -258,17 +259,17 @@ Blade is Laravel's built-in templating engine. It allows developers to create HT
 
 Blade files use the:
 
-```text
+
 .blade.php
-```
+
 
 extension.
 
 For example:
 
-```text
+
 resources/views/home.blade.php
-```
+
 
 ## Blade Layouts
 
@@ -284,7 +285,7 @@ Instead of creating the same navigation and footer code on every page, the layou
 
 Example:
 
-```blade
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -303,7 +304,7 @@ Example:
 
 </body>
 </html>
-```
+
 
 ## Blade Components
 
@@ -311,15 +312,15 @@ Blade components allow reusable sections of the interface to be created.
 
 For example, the navigation bar can be created as a component:
 
-```text
+
 resources/views/components/navbar.blade.php
-```
+
 
 It can then be used with:
 
-```blade
+
 <x-navbar />
-```
+
 
 This prevents the same navigation code from being copied into every page.
 
@@ -329,15 +330,15 @@ The `@extends` directive allows a Blade page to use an existing layout.
 
 Example:
 
-```blade
+
 @extends('layouts.app')
-```
+
 
 This tells the page to use the layout located at:
 
-```text
+
 resources/views/layouts/app.blade.php
-```
+
 
 ## `@section`
 
@@ -345,7 +346,7 @@ The `@section` directive defines content that will be placed inside a section of
 
 Example:
 
-```blade
+
 @section('content')
 
 <h1>Welcome to Our Company</h1>
@@ -353,7 +354,7 @@ Example:
 <p>Learn more about our company and services.</p>
 
 @endsection
-```
+
 
 ## `@yield`
 
@@ -361,17 +362,17 @@ The `@yield` directive defines where content from a child Blade page will appear
 
 Example:
 
-```blade
+
 @yield('content')
-```
+
 
 If a child page contains:
 
-```blade
+
 @section('content')
     <h1>Home Page</h1>
 @endsection
-```
+
 
 the content will appear where `@yield('content')` is located.
 
@@ -381,9 +382,9 @@ The `@include` directive allows another Blade file to be inserted into the curre
 
 Example:
 
-```blade
+
 @include('components.footer')
-```
+
 
 This can be used to include reusable sections such as footers or other partial views.
 
@@ -391,7 +392,7 @@ This can be used to include reusable sections such as footers or other partial v
 
 Example of a page using a layout:
 
-```blade
+
 @extends('layouts.app')
 
 @section('title', 'About Us')
@@ -407,16 +408,18 @@ Example of a page using a layout:
 </section>
 
 @endsection
-```
+
 
 ### Screenshot: Blade Layout
 
-> **Insert your screenshot here.**
+<img width="1920" height="1032" alt="4e381402-abf2-48d3-bf6f-2a19fcc186f8" src="https://github.com/user-attachments/assets/99f38e85-59d0-4535-8d91-da5add2ae6e3" />
+
 
 
 ### Screenshot: Blade Component
 
-> **Insert your screenshot here.**
+<img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/31eaf531-96d5-4f5e-aacd-07a1cc40ca08" />
+
 
 
 # 8. Laravel Folder Structure
@@ -429,9 +432,9 @@ The `app/` folder contains the main application code.
 
 For this project, the controller is located inside:
 
-```text
+
 app/Http/Controllers/
-```
+
 
 The `CompanyController.php` file is located here.
 
@@ -441,9 +444,9 @@ The `routes/` folder contains the application's route definitions.
 
 The main web routes for this project are located in:
 
-```text
+
 routes/web.php
-```
+
 
 ## `resources/`
 
@@ -451,18 +454,18 @@ The `resources/` folder contains frontend resources such as Blade views, CSS, an
 
 The website's Blade pages are stored inside:
 
-```text
+
 resources/views/
-```
+
 
 Examples include:
 
-```text
+
 home.blade.php
 about.blade.php
 services.blade.php
 contact.blade.php
-```
+
 
 ## `public/`
 
@@ -470,9 +473,9 @@ The `public/` folder contains files that are directly accessible by the browser.
 
 It also contains Laravel's entry point:
 
-```text
+
 public/index.php
-```
+
 
 Assets such as images and compiled frontend files can also be placed or generated here.
 
@@ -504,14 +507,16 @@ The following screenshots should be included in the documentation to demonstrate
 
 The Home page serves as the main landing page of the company profile website.
 
-> **Insert Home Page screenshot here.**
+<img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/e38ff1f5-f60d-405c-ab87-bf9f1f4db147" />
+
 
 
 ## About Page
 
 The About page provides information about the company, its background, and its purpose.
 
-> **Insert About Page screenshot here.**
+<img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/6e8a1182-071d-40fd-9beb-1ee5b84eb52d" />
+
 
 
 
@@ -519,7 +524,8 @@ The About page provides information about the company, its background, and its p
 
 The Services page presents the services offered by the company.
 
-> **Insert Services Page screenshot here.**
+<img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/5952eff8-2462-4eb3-a2b1-209d5563ae4d" />
+
 
 
 
@@ -527,7 +533,8 @@ The Services page presents the services offered by the company.
 
 The Contact page provides the company's contact information and allows visitors to find ways to communicate with the business.
 
-> **Insert Contact Page screenshot here.**
+<img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/28a4fa84-f80f-4622-95e2-f426ed94d57c" />
+
 
 
 
@@ -535,7 +542,8 @@ The Contact page provides the company's contact information and allows visitors 
 
 The navigation bar allows users to move between the different pages of the website.
 
-> **Insert Navigation Bar screenshot here.**
+<img width="1904" height="86" alt="image" src="https://github.com/user-attachments/assets/75d18732-d1d3-4adc-a5e4-34b74301ce7d" />
+
 
 
 
@@ -543,25 +551,29 @@ The navigation bar allows users to move between the different pages of the websi
 
 The footer provides additional information and creates a consistent ending section across the website.
 
-> **Insert Footer screenshot here.**
+<img width="1902" height="476" alt="image" src="https://github.com/user-attachments/assets/a2466310-5a84-40c0-9b70-e2175a01c95c" />
+
 
 
 
 ## Route Definitions
 
-> **Insert `web.php` screenshot here.**
+<img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/fb04a803-6ff9-47d5-9145-f1e0b9ab4092" />
+
 
 
 
 ## Controller
 
-> **Insert `CompanyController.php` screenshot here.**
+<img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/5660fbf1-abbd-4d39-9312-bceeb4364a0e" />
+
 
 
 
 ## Blade Layout
 
-> **Insert Blade layout screenshot here.**
+<img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/a4aa1b04-340d-4f05-af42-9ca762e73cbd" />
+
 
 
 # 10. Problems Encountered
@@ -584,15 +596,15 @@ This occurred when Laravel was instructed to load a Blade view that did not exis
 
 For example:
 
-```php
+
 return view('about');
-```
+
 
 requires the following file to exist:
 
-```text
+
 resources/views/about.blade.php
-```
+
 
 If the file was named differently, Laravel would not be able to find it.
 
@@ -602,9 +614,9 @@ A controller namespace issue was also encountered during development.
 
 Laravel controllers normally use a namespace such as:
 
-```php
+
 namespace App\Http\Controllers;
-```
+
 
 If the controller namespace or the controller import in `web.php` was incorrect, Laravel could not properly locate the controller.
 
@@ -614,12 +626,12 @@ Another challenge involved Blade syntax.
 
 Blade uses directives such as:
 
-```blade
+
 @extends()
 @section()
 @yield()
 @include()
-```
+
 
 Using an incorrect directive, missing `@endsection`, or specifying an incorrect view name could cause the page to fail.
 
@@ -631,24 +643,24 @@ Using an incorrect directive, missing `@endsection`, or specifying an incorrect 
 
 The route definitions were checked and corrected in:
 
-```text
+
 routes/web.php
-```
+
 
 The required controller was also imported correctly.
 
 Example:
 
-```php
+
 use App\Http\Controllers\CompanyController;
-```
+
 
 The routes were then defined correctly:
 
-```php
+
 Route::get('/about', [CompanyController::class, 'about'])
     ->name('about');
-```
+
 
 After correcting the route, the About page could be accessed successfully.
 
@@ -658,15 +670,15 @@ The Blade view filenames and locations were checked.
 
 For example:
 
-```php
+
 return view('about');
-```
+
 
 was matched with:
 
-```text
+
 resources/views/about.blade.php
-```
+
 
 The view name in the controller was corrected whenever it did not match the actual Blade filename.
 
@@ -676,15 +688,15 @@ The controller namespace was checked and corrected.
 
 The controller uses:
 
-```php
+
 namespace App\Http\Controllers;
-```
+
 
 The controller was also imported correctly in `web.php`:
 
-```php
+
 use App\Http\Controllers\CompanyController;
-```
+
 
 This allowed Laravel to properly locate and use the `CompanyController`.
 
@@ -694,7 +706,7 @@ The Blade files were checked for incorrect directives and missing closing statem
 
 For example:
 
-```blade
+
 @extends('layouts.app')
 
 @section('content')
@@ -702,7 +714,7 @@ For example:
     <h1>Welcome</h1>
 
 @endsection
-```
+
 
 Using the correct Blade syntax allowed the pages to properly inherit the layout and display their content.
 
