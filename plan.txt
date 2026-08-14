@@ -1,0 +1,1177 @@
+# Laravel and Blade FreshSpin Laundry Services Website
+
+## 1. Project Overview
+
+The project is a simple and professional **laundry service showcase website** developed using **Laravel and Blade**.
+
+The website is designed for **FreshSpin Laundry Services**, a local laundry shop located in **Luisiana, Laguna**.
+
+The main purpose of the website is to promote FreshSpin Laundry Services, introduce the business to potential customers, showcase its laundry services and prices, and provide customers with an easy way to find the shop's contact information.
+
+The website will have a clean, modern, and laundry-themed design that is easy to navigate, especially on mobile devices.
+
+The website will consist of four main pages:
+
+1. Home
+2. About
+3. Services
+4. Contact
+
+The website will also use two reusable Blade components:
+
+* Navigation Bar
+* Footer
+
+---
+
+# 2. Client Information
+
+### Business Name
+
+**FreshSpin Laundry Services**
+
+### Industry
+
+**Laundry / Cleaning Services**
+
+### Location
+
+**Luisiana, Laguna**
+
+### Business Type
+
+**Local Laundry Shop**
+
+### Client Request
+
+FreshSpin Laundry Services wants a simple and professional website to promote its laundry services and make it easier for customers to learn about the business.
+
+The website should allow visitors to:
+
+* Learn about FreshSpin Laundry Services.
+* View the laundry services offered.
+* See the prices of the services.
+* Learn why they should choose FreshSpin.
+* Find the business contact information.
+* Submit a simple customer inquiry through a contact form.
+
+---
+
+# 3. Website Structure
+
+The website will be organized into three main areas:
+
+* **Layout**
+* **Pages**
+* **Components**
+
+## 3.1 Layout
+
+The main layout will provide the common structure shared across all website pages.
+
+It will contain:
+
+* Navigation Bar
+* Main Content Area
+* Footer
+
+The layout will use the reusable Navbar and Footer through Blade `@include()`.
+
+### Layout Structure
+
+**Navbar → Page Content → Footer**
+
+---
+
+## 3.2 Pages
+
+The website will contain four main pages:
+
+* Home
+* About
+* Services
+* Contact
+
+---
+
+## 3.3 Components
+
+Only two reusable components will be used:
+
+* Navigation Bar
+* Footer
+
+The components will contain information and elements that are shared across the website pages.
+
+---
+
+# 4. Home Page
+
+The Home page will serve as the main landing page for FreshSpin Laundry Services.
+
+Its purpose is to immediately introduce the laundry shop and guide visitors toward viewing its services or contacting the business.
+
+The Home page will include:
+
+## 4.1 Hero Banner
+
+The Hero Banner will provide the main introduction to FreshSpin Laundry Services.
+
+It may include:
+
+* **FreshSpin Laundry Services**
+* A short laundry-related tagline or message
+* Laundry-themed image or visual
+* Short introductory text
+* **View Services** button
+
+The View Services button will direct visitors to the Services page.
+
+---
+
+## 4.2 Company Introduction
+
+This section will provide a short introduction to FreshSpin Laundry Services.
+
+It will explain:
+
+* Who FreshSpin Laundry Services is
+* That it is a local laundry shop
+* Its location in Luisiana, Laguna
+* The type of laundry services it provides
+
+The section may include a button or link leading to the About page.
+
+---
+
+## 4.3 Featured Services
+
+This section will highlight selected laundry services to give visitors a quick overview of what FreshSpin offers.
+
+Possible featured services include:
+
+* Wash & Fold
+* Wash, Dry & Fold
+* Express Laundry
+
+The section may include a button leading to the complete Services page.
+
+---
+
+## 4.4 Call-to-Action
+
+The Call-to-Action section will encourage customers to contact FreshSpin Laundry Services.
+
+It may include:
+
+* Short invitation to inquire about services
+* Contact button
+* Link to the Contact page
+
+### Home Page Flow
+
+**Hero Banner → Company Introduction → Featured Services → Call-to-Action**
+
+---
+
+# 5. About Page
+
+The About page will provide visitors with more information about FreshSpin Laundry Services.
+
+It will include the following sections:
+
+## 5.1 Business Background
+
+This section will introduce the background of FreshSpin Laundry Services.
+
+It may include:
+
+* Business introduction
+* Local laundry shop information
+* Location
+* Purpose of the business
+* Services provided
+
+---
+
+## 5.2 Mission
+
+This section will describe FreshSpin Laundry Services' mission.
+
+It should communicate the business's goal of providing convenient and reliable laundry services to customers.
+
+The final mission statement will be based on the client's actual information.
+
+---
+
+## 5.3 Why Choose FreshSpin
+
+This section will explain why customers should choose FreshSpin Laundry Services.
+
+Possible points may include:
+
+* Convenient laundry services
+* Affordable pricing
+* Reliable service
+* Quality cleaning
+* Customer-focused service
+* Local and accessible laundry shop
+
+Any specific claims should be confirmed with the client before being presented as factual information.
+
+### About Page Flow
+
+**Business Background → Mission → Why Choose FreshSpin**
+
+---
+
+# 6. Services Page
+
+The Services page will showcase the different laundry services offered by FreshSpin Laundry Services.
+
+The page must display **six services**.
+
+Each service should include:
+
+* **Icon or Image**
+* **Service Title**
+* **Price**
+* **Service Description**
+
+## 6.1 Laundry Services and Prices
+
+| Service            |        Price |
+| ------------------ | -----------: |
+| Wash & Fold        |   ₱80 / 5 kg |
+| Wash, Dry & Fold   |  ₱120 / 5 kg |
+| Dry Cleaning       |  ₱150 / item |
+| Blanket Cleaning   | ₱150 / piece |
+| Comforter Cleaning | ₱200 / piece |
+| Express Laundry    |  ₱180 / 5 kg |
+
+The prices shown above are based on the client's provided service list.
+
+---
+
+## 6.2 Service Descriptions
+
+Each service will have a short description explaining what the service provides.
+
+For example:
+
+* **Wash & Fold** – Laundry washing and folding service.
+* **Wash, Dry & Fold** – Laundry washing, drying, and folding service.
+* **Dry Cleaning** – Cleaning service for individual items requiring dry cleaning.
+* **Blanket Cleaning** – Cleaning service for blankets.
+* **Comforter Cleaning** – Cleaning service for comforters.
+* **Express Laundry** – Faster laundry service for customers who need their laundry processed quickly.
+
+The final descriptions may be adjusted according to the client's actual service process.
+
+### Services Page Flow
+
+**Services Introduction → Service Listings → Service Details and Prices**
+
+---
+
+# 7. Contact Page
+
+The Contact page will provide customers with the information they need to contact FreshSpin Laundry Services.
+
+It will include:
+
+## 7.1 Company Address
+
+The business location will be displayed.
+
+**Location:** Luisiana, Laguna
+
+The complete address can be added once provided by the client.
+
+---
+
+## 7.2 Phone Number
+
+The business phone number will be displayed.
+
+**Phone:** To be provided by the client.
+
+---
+
+## 7.3 Email
+
+The official business email address will be displayed.
+
+**Email:** To be provided by the client.
+
+---
+
+## 7.4 Business Hours
+
+The operating hours of FreshSpin Laundry Services will be displayed.
+
+**Business Hours:** To be provided by the client.
+
+---
+
+## 7.5 Customer Inquiry Form
+
+A simple customer inquiry form will be included.
+
+The form may contain:
+
+* Name
+* Email
+* Phone Number
+* Subject
+* Message
+* Submit Button
+
+The inquiry form will initially be **UI only**.
+
+The form does not need to process or send customer inquiries at this stage.
+
+---
+
+## 7.6 Embedded Google Map
+
+A Google Map may be embedded to show the location of FreshSpin Laundry Services.
+
+This feature is **optional**.
+
+---
+
+## 7.7 Social Media Links
+
+Social media links may be included to allow customers to connect with FreshSpin Laundry Services online.
+
+Possible platforms include:
+
+* Facebook
+* Instagram
+* Other social media platforms used by the business
+
+The actual social media accounts will be provided by the client.
+
+### Contact Page Flow
+
+**Contact Introduction → Contact Information + Inquiry Form → Google Map (Optional) → Social Media Links**
+
+---
+
+# 8. Navigation Bar Component
+
+The Navigation Bar will be created as a reusable Blade component/partial.
+
+It will appear across all website pages.
+
+The Navbar must contain:
+
+* **Logo**
+* **Home**
+* **About**
+* **Services**
+* **Contact**
+
+### Navbar Navigation
+
+**Logo | Home | About | Services | Contact**
+
+The navigation links will allow visitors to move between the four main pages.
+
+The logo will represent **FreshSpin Laundry Services**.
+
+The Navbar should be simple, clean, and mobile-friendly.
+
+---
+
+# 9. Footer Component
+
+The Footer will also be created as a reusable Blade component/partial.
+
+It will appear across all website pages.
+
+The Footer must contain:
+
+## 9.1 Copyright
+
+The copyright information for FreshSpin Laundry Services.
+
+Example:
+
+**© 2026 FreshSpin Laundry Services. All Rights Reserved.**
+
+---
+
+## 9.2 Social Media
+
+Links or icons for the business's social media accounts.
+
+Possible platforms include:
+
+* Facebook
+* Instagram
+* Other platforms provided by the client
+
+---
+
+## 9.3 Contact Information
+
+The Footer will display basic business contact information, including:
+
+* Address
+* Email
+* Phone Number
+
+---
+
+# 10. Overall Website Structure
+
+The final planned structure is:
+
+**FreshSpin Laundry Services Website**
+
+### Layout
+
+* Navigation Bar
+* Main Content
+* Footer
+
+### Home
+
+* Hero Banner
+* Company Introduction
+* Featured Services
+* Call-to-Action
+
+### About
+
+* Business Background
+* Mission
+* Why Choose FreshSpin
+
+### Services
+
+* Wash & Fold
+
+  * Icon/Image
+  * Title
+  * Price
+  * Description
+* Wash, Dry & Fold
+
+  * Icon/Image
+  * Title
+  * Price
+  * Description
+* Dry Cleaning
+
+  * Icon/Image
+  * Title
+  * Price
+  * Description
+* Blanket Cleaning
+
+  * Icon/Image
+  * Title
+  * Price
+  * Description
+* Comforter Cleaning
+
+  * Icon/Image
+  * Title
+  * Price
+  * Description
+* Express Laundry
+
+  * Icon/Image
+  * Title
+  * Price
+  * Description
+
+### Contact
+
+* Address
+* Phone Number
+* Email
+* Business Hours
+* Customer Inquiry Form
+* Google Map (Optional)
+* Social Media Links
+
+### Components
+
+* Navbar
+* Footer
+
+---
+
+# 11. Technology
+
+The website will be developed using:
+
+* **Laravel** – PHP web application framework
+* **Blade** – Laravel's templating engine
+* **HTML** – Website structure
+* **CSS** – Website styling
+* **JavaScript** – Optional client-side interactions
+
+Blade `@include()` will be used to include the reusable Navbar and Footer.
+
+The project will initially focus on the **front-end presentation and Blade structure**.
+
+Backend functionality for the customer inquiry form is **not required at this stage**.
+
+---
+
+# 12. Design Requirements
+
+The website should have a:
+
+* Clean design
+* Modern appearance
+* Laundry-themed visual style
+* Simple navigation
+* Easy-to-read content
+* Mobile-friendly layout
+* Consistent Navbar and Footer
+* Clear service pricing
+* Clear call-to-action buttons
+
+The design should prioritize usability so that customers can quickly find services, prices, and contact information.
+
+---
+
+# 13. Main Goal
+
+The main goal of the FreshSpin Laundry Services website is to create a simple, professional, and user-friendly online presence for the local laundry business.
+
+Visitors should be able to:
+
+1. Understand what FreshSpin Laundry Services offers.
+2. Learn about the laundry business.
+3. View all available laundry services.
+4. See the prices of each service.
+5. Understand why they should choose FreshSpin.
+6. Find the business address, phone number, email, and operating hours.
+7. Submit a simple customer inquiry.
+8. Navigate easily between Home, About, Services, and Contact.
+9. Access the website comfortably on mobile devices.
+10. Connect with FreshSpin through its social media platforms.
+
+
+
+Design
+
+FRESHSPIN LAUNDRY SERVICES
+WEBSITE DESIGN PLAN
+
+1. DESIGN CONCEPT
+
+Theme: Clean, Fresh, Modern, and Professional
+
+The website should communicate:
+
+- Cleanliness
+- Freshness
+- Trust
+- Convenience
+- Professional laundry service
+
+The website will be designed specifically for desktop/PC screens. The design will use large sections, spacious layouts, service cards, and a simple navigation system.
+
+
+2. COLOR PALETTE
+
+Primary Color:
+Fresh Blue - #2196F3
+
+Used for:
+- Buttons
+- Links
+- Icons
+- Highlights
+
+Secondary Color:
+Light Cyan - #E0F7FA
+
+Used for:
+- Section backgrounds
+- Highlight areas
+
+Background:
+White - #FFFFFF
+
+Used for:
+- Main page background
+- Cards
+- Forms
+
+Main Text:
+Dark Gray - #263238
+
+Used for:
+- Headings
+- Main text
+
+Secondary Text:
+Muted Gray - #607D8B
+
+Used for:
+- Descriptions
+- Supporting information
+
+Footer / Dark Sections:
+Dark Blue - #0D47A1
+
+Used for:
+- Footer
+- Strong call-to-action sections
+
+
+3. TYPOGRAPHY
+
+Headings:
+Poppins
+
+Used for:
+- Main headings
+- Section titles
+- Service names
+- Important text
+
+Body:
+Inter
+
+Used for:
+- Paragraphs
+- Descriptions
+- Contact information
+- General content
+
+Headings should be bold and noticeable, while body text should remain simple and easy to read.
+
+
+4. OVERALL WEBSITE STRUCTURE
+
+Every page will follow the same structure:
+
+Navbar
+    ↓
+Page Content
+    ↓
+Footer
+
+The Navbar and Footer will remain consistent across all four pages.
+
+
+5. NAVIGATION BAR DESIGN
+
+The Navigation Bar will contain:
+
+- FreshSpin logo/business name
+- Home
+- About
+- Services
+- Contact
+
+Layout:
+
+FreshSpin Laundry Services        Home   About   Services   Contact
+
+Design:
+
+- White background
+- Logo/business name on the left
+- Navigation links on the right
+- Fresh Blue for active and hover states
+- Subtle shadow underneath
+- Clean spacing between navigation links
+
+The logo should be visually stronger than the navigation links.
+
+
+6. HOME PAGE DESIGN
+
+6.1 HERO BANNER
+
+The Hero Banner will be the main visual section of the Home page.
+
+Layout:
+
+- Two-column desktop layout
+- Left side contains the main text
+- Right side contains a laundry-themed image
+
+Left side:
+
+FreshSpin Laundry Services
+Fresh Laundry, Fresh Start!
+
+Short business description
+
+[ View Services ]
+
+Right side:
+
+Laundry-related image
+
+Design:
+
+- Light Cyan background
+- Large heading
+- Short description
+- Blue Call-to-Action button
+- Large laundry-themed image
+- Subtle laundry-related decorative elements
+
+The Hero should immediately communicate that the website is for a laundry business.
+
+
+6.2 COMPANY INTRODUCTION
+
+The Company Introduction section will use a two-column layout.
+
+Left side:
+
+- Company introduction
+- Short description
+- What FreshSpin provides
+- Learn More button
+
+Right side:
+
+- Laundry-related image
+
+Background:
+
+White
+
+
+6.3 FEATURED SERVICES
+
+The Featured Services section will display three selected services.
+
+Suggested services:
+
+- Wash & Fold
+- Wash, Dry & Fold
+- Express Laundry
+
+Layout:
+
+Three service cards in one row.
+
+Each card should contain:
+
+- Icon
+- Service name
+- Price
+- Short description
+
+Card design:
+
+- White background
+- Rounded corners
+- Soft shadow
+- Blue icons
+- Clear service names
+- Highlighted prices
+- Short descriptions
+
+The section can use a Light Cyan background.
+
+A "View All Services" button will be placed underneath.
+
+
+6.4 CALL-TO-ACTION
+
+A full-width Call-to-Action section will appear near the bottom of the Home page.
+
+Content:
+
+"Ready for Fresh, Clean Laundry?"
+
+Short supporting message.
+
+[ Contact Us ]
+
+Design:
+
+- Fresh Blue or Dark Blue background
+- White text
+- Clear heading
+- Contrasting button
+- Centered content
+
+
+7. ABOUT PAGE DESIGN
+
+7.1 PAGE HEADER
+
+The page will begin with:
+
+"About FreshSpin Laundry Services"
+
+A short introduction will be placed below the heading.
+
+The header can use a Light Cyan background.
+
+
+7.2 BUSINESS BACKGROUND
+
+The Business Background section will use a two-column layout.
+
+Left side:
+
+- Company history
+- Business background
+- Information about FreshSpin
+
+Right side:
+
+- Laundry-related image
+
+
+7.3 MISSION
+
+The Mission will be displayed in a highlighted section.
+
+Example:
+
+OUR MISSION
+
+FreshSpin's mission statement...
+
+The section can use a Light Cyan background or a white card.
+
+
+7.4 WHY CHOOSE FRESHSPIN
+
+The section will display several reasons customers should choose FreshSpin.
+
+Examples:
+
+- Convenient
+- Affordable
+- Reliable
+- Customer-Focused
+
+Each item can have a simple icon.
+
+
+8. SERVICES PAGE DESIGN
+
+The Services page will be organized using a three-column card grid.
+
+There will be six service cards.
+
+First Row:
+
+- Wash & Fold
+- Wash, Dry & Fold
+- Dry Cleaning
+
+Second Row:
+
+- Blanket Cleaning
+- Comforter Cleaning
+- Express Laundry
+
+Each service card will contain:
+
+1. Icon or Image
+2. Service Title
+3. Price
+4. Service Description
+
+Service Card Design:
+
+- White background
+- Rounded corners
+- Soft shadow
+- Blue icon
+- Large service title
+- Price highlighted in Fresh Blue
+- Short description
+
+Hover Effect:
+
+When the mouse moves over a card:
+
+- Card slightly rises
+- Shadow becomes stronger
+- Icon or title becomes blue
+
+The animation should remain subtle.
+
+
+9. CONTACT PAGE DESIGN
+
+The Contact page will use a two-column desktop layout.
+
+9.1 LEFT COLUMN - CONTACT INFORMATION
+
+The following information will be displayed:
+
+Address:
+
+25 Laundry Lane, Barangay Poblacion,
+Luisiana, Laguna
+
+Phone:
+
++63 917 555 0148
+
+Email:
+
+hello@freshspin.example
+
+Business Hours:
+
+Monday-Saturday: 8:00 AM-7:00 PM
+Sunday: 9:00 AM-5:00 PM
+
+
+9.2 RIGHT COLUMN - CUSTOMER INQUIRY FORM
+
+The form will contain:
+
+- Name
+- Email
+- Phone Number
+- Subject
+- Message
+- Send Inquiry button
+
+Form Design:
+
+- White background
+- Rounded corners
+- Soft shadow
+- Clear labels
+- Comfortable input spacing
+- Blue focus state
+- Blue Submit button
+
+The form will remain UI only and will not process submissions.
+
+
+9.3 SOCIAL MEDIA SECTION
+
+A Social Media section will be placed below the contact information and inquiry form.
+
+It will contain fictional social media links such as:
+
+- FreshSpin Social
+- FreshSpin Connect
+- FreshSpin Community
+
+The links will use .example domains to avoid linking to real social media accounts.
+
+
+10. FOOTER DESIGN
+
+The Footer will use Dark Blue (#0D47A1).
+
+Layout:
+
+FreshSpin Laundry Services
+Short Description
+
+Contact Information:
+- Address
+- Phone
+- Email
+
+Follow Us:
+- FreshSpin Social
+- FreshSpin Connect
+- FreshSpin Community
+
+Copyright:
+© 2026 FreshSpin Laundry Services. All Rights Reserved.
+
+Footer Colors:
+
+- Background: Dark Blue
+- Headings: White
+- Text: Light White/Gray
+- Links: White
+- Hover: Light Cyan
+
+
+11. BUTTON DESIGN
+
+All buttons will use a consistent design.
+
+Primary Button:
+
+- Fresh Blue background
+- White text
+- Rounded corners
+- Comfortable padding
+- Slight shadow
+- Darker blue hover effect
+
+Examples:
+
+- View Services
+- Learn More
+- Contact Us
+- Send Inquiry
+
+
+12. CARD DESIGN
+
+Cards will be used for:
+
+- Featured Services
+- Services
+- Mission
+- Why Choose FreshSpin
+
+Card Style:
+
+- White background
+- Rounded corners
+- Soft shadow
+- Comfortable padding
+- Blue accents
+- Clean typography
+
+The design should avoid excessive borders and heavy shadows.
+
+
+13. IMAGES AND ICONS
+
+Images should follow the laundry theme.
+
+Possible images include:
+
+- Washing machines
+- Folded clothes
+- Laundry baskets
+- Clean clothes
+- Laundry shop
+- Laundry cleaning process
+
+Icons should be:
+
+- Simple
+- Modern
+- Consistent
+- Blue or Dark Blue
+
+The same icon style should be used throughout the website.
+
+
+14. SPACING AND LAYOUT
+
+The website should have plenty of whitespace.
+
+Each major section should have:
+
+- Large top and bottom spacing
+- Clear separation between sections
+- Comfortable spacing between elements
+- Consistent content width
+
+The goal is to prevent the website from looking crowded.
+
+
+15. DESKTOP DESIGN
+
+The website will focus only on PC/Desktop.
+
+The design will use:
+
+- Wide content areas
+- Two-column layouts
+- Three-column service grids
+- Large Hero Banner
+- Horizontal Navbar
+- Multi-column Footer
+
+Mobile-specific features such as hamburger menus and mobile layouts will not be included.
+
+
+16. VISUAL HIERARCHY
+
+The website should prioritize information in the following order:
+
+1. FreshSpin Laundry Services
+2. Fresh Laundry, Fresh Start!
+3. Laundry Services and Prices
+4. Contact Information
+5. About the Business
+6. Additional Information
+
+Important buttons and prices should be visually noticeable.
+
+
+17. FINAL DESIGN SYSTEM
+
+Project:
+FreshSpin Laundry Services
+
+Theme:
+Clean, Fresh, Modern, Professional
+
+Primary Color:
+#2196F3
+
+Secondary Color:
+#E0F7FA
+
+Background:
+#FFFFFF
+
+Main Text:
+#263238
+
+Secondary Text:
+#607D8B
+
+Footer / Dark Blue:
+#0D47A1
+
+Headings:
+Poppins
+
+Body:
+Inter
+
+Layout:
+Desktop / PC Only
+
+Style:
+
+- Rounded cards
+- Soft shadows
+- Clean spacing
+- Blue accents
+- Laundry-themed images
+- Simple icons
+- Subtle hover effects
+- Large sections
+- Clear visual hierarchy
+
+
+18. OVERALL DESIGN GOAL
+
+The final FreshSpin Laundry Services website should look like a real and professional local laundry business website.
+
+The design should be:
+
+Simple + Clean + Fresh + Professional
+
+The website should make it easy for visitors to:
+
+1. Understand what FreshSpin Laundry Services is.
+2. Learn about the business.
+3. View all six laundry services.
+4. See the service prices.
+5. Find the company's contact information.
+6. Send an inquiry through the UI form.
+7. Navigate easily between Home, About, Services, and Contact.

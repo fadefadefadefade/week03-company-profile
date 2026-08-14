@@ -1,0 +1,216 @@
+/* ========================================
+   FRESHSPIN LAUNDRY SERVICES
+   Global Website Styles
+   ======================================== */
+
+
+/* ========================================
+   1. FONT IMPORTS
+   ======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap');
+
+@import './navbar.css';
+@import './footer.css';
+@import './home.css';
+@import './about.css';
+@import './services.css';
+@import './contact.css';
+
+
+/* ========================================
+   2. COLOR VARIABLES
+   ======================================== */
+
+:root {
+    --primary-blue: #2196F3;
+    --light-cyan: #E0F7FA;
+    --white: #FFFFFF;
+    --dark-text: #263238;
+    --muted-text: #607D8B;
+    --dark-blue: #0D47A1;
+}
+
+
+/* ========================================
+   3. BASIC RESET
+   ======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   4. HTML & BODY
+   ======================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--white);
+    color: var(--dark-text);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+
+/* ========================================
+   5. HEADINGS
+   ======================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-text);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+/* ========================================
+   6. PARAGRAPHS
+   ======================================== */
+
+p {
+    color: var(--muted-text);
+    font-size: 16px;
+}
+
+
+/* ========================================
+   7. LINKS
+   ======================================== */
+
+a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+a:hover {
+    color: var(--dark-blue);
+}
+
+
+/* ========================================
+   8. MAIN CONTENT
+   ======================================== */
+
+main {
+    width: 100%;
+    min-height: 70vh;
+}
+
+
+/* ========================================
+   9. GENERAL SECTION
+   ======================================== */
+
+section {
+    width: 100%;
+}
+
+
+/* ========================================
+   10. CONTENT CONTAINER
+   ======================================== */
+
+.container {
+    width: 1200px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+
+/* ========================================
+   11. BUTTONS
+   ======================================== */
+
+button,
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+
+    background-color: var(--primary-blue);
+    color: var(--white);
+
+    border: none;
+    border-radius: 8px;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+button:hover,
+.btn:hover {
+    background-color: var(--dark-blue);
+    color: var(--white);
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 15px rgba(13, 71, 161, 0.2);
+}
+
+
+/* ========================================
+   12. GENERAL IMAGE SETTINGS
+   ======================================== */
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* ========================================
+   13. GENERAL FORM SETTINGS
+   ======================================== */
+
+input,
+textarea,
+select {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}
+
+
+/* ========================================
+   14. TEXT SELECTION
+   ======================================== */
+
+::selection {
+    background-color: var(--primary-blue);
+    color: var(--white);
+}
