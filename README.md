@@ -174,13 +174,6 @@ Route::get('/contact', [CompanyController::class, 'contact'])->name('contact');
 
 > **Insert your screenshot here.**
 
-Example:
-
-```text
-[SCREENSHOT – routes/web.php]
-```
-
----
 
 # 6. Controllers
 
@@ -258,12 +251,6 @@ resources/views/about.blade.php
 ### Screenshot: `CompanyController.php`
 
 > **Insert your screenshot here.**
-
-```text
-[SCREENSHOT – CompanyController.php]
-```
-
----
 
 # 7. Blade Templating Engine
 
@@ -426,19 +413,11 @@ Example of a page using a layout:
 
 > **Insert your screenshot here.**
 
-```text
-[SCREENSHOT – resources/views/layouts/app.blade.php]
-```
 
 ### Screenshot: Blade Component
 
 > **Insert your screenshot here.**
 
-```text
-[SCREENSHOT – resources/views/components/navbar.blade.php]
-```
-
----
 
 # 8. Laravel Folder Structure
 
@@ -527,9 +506,6 @@ The Home page serves as the main landing page of the company profile website.
 
 > **Insert Home Page screenshot here.**
 
-```text
-[SCREENSHOT – Home Page]
-```
 
 ## About Page
 
@@ -537,9 +513,7 @@ The About page provides information about the company, its background, and its p
 
 > **Insert About Page screenshot here.**
 
-```text
-[SCREENSHOT – About Page]
-```
+
 
 ## Services Page
 
@@ -547,9 +521,7 @@ The Services page presents the services offered by the company.
 
 > **Insert Services Page screenshot here.**
 
-```text
-[SCREENSHOT – Services Page]
-```
+
 
 ## Contact Page
 
@@ -557,9 +529,7 @@ The Contact page provides the company's contact information and allows visitors 
 
 > **Insert Contact Page screenshot here.**
 
-```text
-[SCREENSHOT – Contact Page]
-```
+
 
 ## Navigation Bar
 
@@ -567,9 +537,7 @@ The navigation bar allows users to move between the different pages of the websi
 
 > **Insert Navigation Bar screenshot here.**
 
-```text
-[SCREENSHOT – Navigation Bar]
-```
+
 
 ## Footer
 
@@ -577,35 +545,24 @@ The footer provides additional information and creates a consistent ending secti
 
 > **Insert Footer screenshot here.**
 
-```text
-[SCREENSHOT – Footer]
-```
+
 
 ## Route Definitions
 
 > **Insert `web.php` screenshot here.**
 
-```text
-[SCREENSHOT – Route Definitions]
-```
+
 
 ## Controller
 
 > **Insert `CompanyController.php` screenshot here.**
 
-```text
-[SCREENSHOT – CompanyController]
-```
+
 
 ## Blade Layout
 
 > **Insert Blade layout screenshot here.**
 
-```text
-[SCREENSHOT – Blade Layout]
-```
-
----
 
 # 10. Problems Encountered
 
