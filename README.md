@@ -172,7 +172,8 @@ Route::get('/contact', [CompanyController::class, 'contact'])->name('contact');
 
 ### Screenshot: `web.php`
 
-> **Insert your screenshot here.**
+<img width="1920" height="1032" alt="ddbe0dc5-37e9-49bb-9417-28326d81a9d8" src="https://github.com/user-attachments/assets/46034cd1-3522-4ad0-9b09-31ddf7337a0e" />
+
 
 
 # 6. Controllers
@@ -250,7 +251,7 @@ resources/views/about.blade.php
 
 ### Screenshot: `CompanyController.php`
 
-> **Insert your screenshot here.**
+<img width="1920" height="1032" alt="bd4e1b5e-696f-4510-aee4-c98125c74d62" src="https://github.com/user-attachments/assets/a49bfc5f-c667-4e38-a493-62b1b60b09de" />
 
 # 7. Blade Templating Engine
 
@@ -411,12 +412,14 @@ Example of a page using a layout:
 
 ### Screenshot: Blade Layout
 
-> **Insert your screenshot here.**
+<img width="1920" height="1032" alt="4e381402-abf2-48d3-bf6f-2a19fcc186f8" src="https://github.com/user-attachments/assets/99f38e85-59d0-4535-8d91-da5add2ae6e3" />
+
 
 
 ### Screenshot: Blade Component
 
-> **Insert your screenshot here.**
+<img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/31eaf531-96d5-4f5e-aacd-07a1cc40ca08" />
+
 
 
 # 8. Laravel Folder Structure
